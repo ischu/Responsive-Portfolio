@@ -1,0 +1,332 @@
+html{
+  height: 100%;
+  margin: 0;
+}
+/* default styles and background img */
+body {
+    background:#777 url(../images/gravel.png);
+    color: #777 ;
+    font-family: 'Arial', 'helvetica Neue', Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+/* Restoring default headings */
+h1{
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 { 
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+/* Teal background white text */
+.tealWhite{
+  background-color: #4aaaa5; 
+  color: #fff;
+  font-family: 'Arial', 'helvetica Neue', Helvetica, sans-serif;
+}
+
+/* clearing floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Main Header */
+/* This is the header background */
+.mainHeader {
+  background-color: #fff;
+  border-color: #ccc;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  width: 100%;
+  height: 15vh;
+  /* position: absolute; */
+  top: 0;
+  left:0;
+  display: flex;
+  justify-content: center;
+}
+
+/* flex container for header elements */
+.headerContainer {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navEle{
+  height: 100%;
+  margin: 0;
+  display:flex;
+}
+
+#myName {
+  /* width: auto; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* height: 100%; */
+  /* margin-left: 1rem; */
+  /* line-height: 1.6; */
+  font-size: 2em;
+  display: block;
+  font-weight: bold;
+  align-self: center;
+}
+
+#links  {
+  /* height: 2rem; */
+  /* orients and styles list */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* margin-right: 1rem; */
+}
+
+.border-right{
+  border-right: 1px solid #777;
+}
+li{
+  padding-right: .5rem;
+  padding-left: .5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 1rem;
+  text-align: center;
+  align-self: center;
+}
+/* aligns link section text with myName text */
+/* nav {
+  position: relative;
+  top: 37px;
+} */
+
+/* Changes link styling */
+a:link, a:visited {
+  text-decoration: none;
+  color: #777 ;
+  font-family: 'Arial', 'helvetica Neue', Helvetica, sans-serif;
+}
+
+a:hover {
+  color: #4aaaa5;
+}
+
+/* Main Content Box */
+main {
+  background-color: #fff;
+/* 4+26+900+26+4 = 960 */
+  border: 4px solid #ddd;
+  height: auto;
+  width: 900px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  display:flex;
+  flex-direction: column;
+  flex-basis: content;
+  justify-content: flex-start;
+/* centers box */
+/* position: absolute; */
+/* margin-bottom: 100px; */
+  /* top: 120px;
+  bottom: 20%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%); */
+}
+
+.contentHead {
+  height: 10%;
+  color: #4aaaa5;
+  border-bottom: 4px solid #ddd;
+}
+
+.contentBody{
+  height: 90%;
+  padding-top: 10px;
+  /* display: flex; */
+}
+
+/* heights for each content box */
+
+/* #aboutBox {
+  height: 460px;
+}
+
+#portfolioBox {
+  height: 560px
+}
+
+#formBox {
+  height: 470px
+} */
+
+/* for index.html */
+
+#profilePic {
+  float: left;
+  margin: 1rem;
+}
+
+#profileText {
+}
+
+p {
+  line-height: 1.3;
+  font-size: 18px;
+  padding: .5rem;
+}
+
+
+/* contact form */
+form{
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+}
+
+span{
+  line-height: 1.3;
+
+}
+
+.formSpace{
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  max-width: 900px;
+}
+
+.submit{
+  background-color: #4aaaa5;
+  color:#fff;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* portfolio objects */
+
+.projectObject {
+  float: left;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color:#777;
+  margin: 1rem;
+}
+/* adjust positioning of portfolio labels */
+.portLabel { 
+  position: relative;
+  top: 70%;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.projectObject:hover {
+  opacity:0.5;
+  background-color: #4aaaa5;
+}
+
+/* background images for projectObjects */
+
+#PO1 {
+  background-image: url(../images/port1.jpg);
+}
+
+#PO2 {
+  background-image: url(../images/port2.jpg);
+}
+
+#PO3 {
+  background-image: url(../images/port3.jpg);
+}
+
+#PO4 {
+  background-image: url(../images/port4.jpg);
+}
+
+#PO5 {
+  background-image: url(../images/port5.jpg);
+}
+
+#PO6 {
+  background-image: url(../images/port6.jpg);
+}
+
+/* Footer stuff (attempted sticky)*/
+.wrapper{
+  flex: 1 0 auto;
+  height: 85%;
+  margin-bottom: 5%;
+}
+
+footer {
+  background-color: #666;
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  border-top: 8px solid #4aaaa5;
+  flex-shrink: 0;
+}
+
+/* Media Screen Section */
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 768px) {
+  .headerContainer{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .mainHeader{
+    position: static;
+    height: 12%;
+    width: 100%;
+  }
+
+  .headerContainer{
+    width: 100%; 
+    flex-direction: column;
+  }
+  
+  .navEle{
+    width: 100%;
+    /* height: 6%; */
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .contentBox{
+    /* height: 65%; */
+    width: 80%;
+  }
+
+  /* footer{
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  } */
+
+}
